@@ -1,5 +1,5 @@
 
-SmartBlock Render Model (rmod)  
+#SmartBlock Render Model (rmod)  
 
 <%SET:render_model_block_ref,<%CURRENTBLOCKREF%>%><%SET:rmod_graph_query,<%INPUT:Is the url for a model uploaded to a roam graph?%%Yes%%No%>%><%SET:render_block_src,<%IF:"<%GET:rmod_graph_query%>"=="Yes"%><%THEN:<%REPLACE:<%CURRENTBLOCKCONTENT%>,&,%26%>%><%ELSE:<%CURRENTBLOCKCONTENT%>%>%><%NOBLOCKOUTPUT%>  
 
