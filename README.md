@@ -3,7 +3,7 @@ A simple site to act as a renderer for modelviewer for roam-research
 
 In order to use this most effectively please utilize the following smartblock [here](https://raw.githubusercontent.com/Ryxai/roam-model-render/main/smartblock.md). You will need the [SmartBlocks extension](https://roamjs.com/extensions/smartblocks) to use it. 
 
-**Status in the Smartblock Store**: *Pending*
+**Status in the Smartblock Store**: **Available**
 
 The syntax for the website should you choose to use it independently is 
 
