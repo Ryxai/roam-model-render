@@ -1,7 +1,7 @@
 - #SmartBlock Render Model (rmod)
     - <%SET:render_model_block_ref,<%CURRENTBLOCKREF%>%><%SET:rmod_graph_query,<%INPUT:Is the url for a model uploaded to a roam graph?%%Yes%%No%>%>
 <%SET:render_block_src,<%CURRENTBLOCKCONTENT%>%>
-<%IFVAR:"<%GET:rmod_graph_query%>,Yes%><%SET:render_block_src,<%REPLACE:<%CURRENTBLOCKCONTENT%>,&,%26%>%><%NOBLOCKOUTPUT%>
+<%IFVAR:rmod_graph_query,Yes%><%SET:render_block_src,<%REPLACE:<%CURRENTBLOCKCONTENT%>,&,%26%>%><%NOBLOCKOUTPUT%>
     - <%NOBLOCKOUTPUT%>#[[Smartblock Comment]] ^^Grabbing the current block content and storing it a variable. Additionally escaping & which causes an issue w/ roam-research firebase urls^^
     - <%SET:iframe_comp_fix,{{iframe-component%><%NOBLOCKOUTPUT%>
     - <%NOBLOCKOUTPUT%>#[[Smartblock Comment]] ^^Fix for leaving presentation as text and not rendering inside block^^
